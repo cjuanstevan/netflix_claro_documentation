@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: data/attributes/authUser/source/GetAccessToken.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: data/attributes/authUser/source/GetAccessToken.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>module.exports.getAccessToken = getAccessToken;
+
+/**
+ * Recupera un token de acceso de un servidor.
+ * @param {string} url - La URL del punto final del servidor para solicitar el token de acceso.
+ * @param {string} authCode - El código de autorización requerido para autenticar la solicitud.
+ * @param {string} appId - La identificación de la aplicación que realiza la solicitud.
+ * @returns {Promise} Una promesa que se resuelve con el token de acceso y otra información relevante.
+ */
+function getAccessToken (url, authCode, appId) {
+  const mock = true;
+  if (mock) {
+    const mockResponse = {
+      data: {
+        error: 0,
+        response: {
+          tokenInfo: {
+            accessToken:
+              "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uS2V5IjoiNTM4YmNmMmItOTZiYS00ZDM4LWFiMDUtYTQ1NDZkZGU2NWQyIiwidXNlcl9uYW1lIjoiVXNlclByb2ZpbGVWbyhpZD03MDA1MTksIHRlbmFudElkPTEsIHVzZXJJZD03MDA1MTksIHVzZXJDb2RlPTY4MjQ2OTIyN2EwMzUyNCwgZW1haWw9anVhbi5zYWF2ZWRyYTkzMDZAZ21haWwuY29tLCBwd2Q9bnVsbCwgZWZmZWN0aXZlRGF0ZT1udWxsLCBleHBpcnlEYXRlPW51bGwsIGxvZ2luRmFpbD1udWxsLCBzdGF0dXM9bnVsbCwgY3JlYXRlQnk9bnVsbCwgY3JlYXRlRGF0ZT1udWxsLCB1cGRhdGVEYXRlPW51bGwsIG5lZWRDaGFuZ2VQYXNzd29yZD1udWxsLCBjdXN0b21lclByb2ZpbGU9bnVsbCwgdXNlclR5cGU9bnVsbCwgY3VzdG9tZXJJZD1udWxsLCB1c2VyUG9ydHJhaXRQcm9maWxlPW51bGwsIGdyb3VwSWQ9bnVsbCwgcGhvbmVOdW1iZXI9MzA1ODg2MzIzNywgdXNlclByb2ZpbGVEZXRhaWxWbz1Vc2VyUHJvZmlsZURldGFpbFZvKHVzZXJJZD03MDA1MTksIHVzZXJDb2RlPTY4MjQ2OTIyN2EwMzUyNCwgbmlja05hbWU9LCBnZW5kZXI9bnVsbCwgZmFjZVVybD1udWxsLCBtYWluT3JnTmFtZT1udWxsLCB1c2VyU3RhdGU9QSwgZW1haWw9anVhbi5zYWF2ZWRyYTkzMDZAZ21haWwuY29tLCBwaG9uZU51bWJlcj0zMDU4ODYzMjM3LCB1c2VyTmFtZT0sIHRlbmFudElkPTEsIGN1c3RvbWVySW5mbz1udWxsLCBncmFkZU5hbWU9bnVsbCwgZ3Jvd3RoVmFsPW51bGwpLCB1c2VyT3JnUHJvZmlsZUxpc3Q9W10sIGRvbWFpbklkTGlzdD1udWxsLCBjb3VudHJ5UGhvbmVDb2RlPW51bGwsIHVzZXJOYW1lPSwgbmlja05hbWU9LCBzZW5kQWN0aXZlU21zPW51bGwsIHNlbmRBY3RpdmVFbWFpbD1udWxsLCBpbnB1dEZhaWw9bnVsbCwgY29tbWVudHM9bnVsbCwgYXZhdGFyPW51bGwsIGxvY2tUaW1lPW51bGwsIHVwZGF0ZUJ5PW51bGwsIHN0YWZmQ29kZUxpc3Q9bnVsbCwgc3RhZmZQcm9maWxlTGlzdD1udWxsLCBleHRJbmZvPW51bGwsIGxvY2tTdGF0ZT1udWxsKSIsInNjb3BlIjpbIlVzZXJfQ3VzdG9tZXJfS1lDX0luZm8iXSwiZXhwIjoxNjk3MDYxOTM2LCJ0b2tlblR5cGUiOm51bGwsInVzZXJJZCI6IjcwMDUxOSIsImp0aSI6ImplLUc4XzFnZGR5RVpDX3lXWlM4blBLdXJ6NCIsImNsaWVudF9pZCI6IjIwMjMwODMxMjE1NzAwMDEifQ.-qiMMQ6HWRCsaBzpfCy5gpZJuHX5GObcRjOGlmYgWY4",
+            accessTokenExpiryTime: "1697061936918",
+            refreshToken:
+              "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uS2V5IjoiNTM4YmNmMmItOTZiYS00ZDM4LWFiMDUtYTQ1NDZkZGU2NWQyIiwidXNlcl9uYW1lIjoiVXNlclByb2ZpbGVWbyhpZD03MDA1MTksIHRlbmFudElkPTEsIHVzZXJJZD03MDA1MTksIHVzZXJDb2RlPTY4MjQ2OTIyN2EwMzUyNCwgZW1haWw9anVhbi5zYWF2ZWRyYTkzMDZAZ21haWwuY29tLCBwd2Q9bnVsbCwgZWZmZWN0aXZlRGF0ZT1udWxsLCBleHBpcnlEYXRlPW51bGwsIGxvZ2luRmFpbD1udWxsLCBzdGF0dXM9bnVsbCwgY3JlYXRlQnk9bnVsbCwgY3JlYXRlRGF0ZT1udWxsLCB1cGRhdGVEYXRlPW51bGwsIG5lZWRDaGFuZ2VQYXNzd29yZD1udWxsLCBjdXN0b21lclByb2ZpbGU9bnVsbCwgdXNlclR5cGU9bnVsbCwgY3VzdG9tZXJJZD1udWxsLCB1c2VyUG9ydHJhaXRQcm9maWxlPW51bGwsIGdyb3VwSWQ9bnVsbCwgcGhvbmVOdW1iZXI9MzA1ODg2MzIzNywgdXNlclByb2ZpbGVEZXRhaWxWbz1Vc2VyUHJvZmlsZURldGFpbFZvKHVzZXJJZD03MDA1MTksIHVzZXJDb2RlPTY4MjQ2OTIyN2EwMzUyNCwgbmlja05hbWU9LCBnZW5kZXI9bnVsbCwgZmFjZVVybD1udWxsLCBtYWluT3JnTmFtZT1udWxsLCB1c2VyU3RhdGU9QSwgZW1haWw9anVhbi5zYWF2ZWRyYTkzMDZAZ21haWwuY29tLCBwaG9uZU51bWJlcj0zMDU4ODYzMjM3LCB1c2VyTmFtZT0sIHRlbmFudElkPTEsIGN1c3RvbWVySW5mbz1udWxsLCBncmFkZU5hbWU9bnVsbCwgZ3Jvd3RoVmFsPW51bGwpLCB1c2VyT3JnUHJvZmlsZUxpc3Q9W10sIGRvbWFpbklkTGlzdD1udWxsLCBjb3VudHJ5UGhvbmVDb2RlPW51bGwsIHVzZXJOYW1lPSwgbmlja05hbWU9LCBzZW5kQWN0aXZlU21zPW51bGwsIHNlbmRBY3RpdmVFbWFpbD1udWxsLCBpbnB1dEZhaWw9bnVsbCwgY29tbWVudHM9bnVsbCwgYXZhdGFyPW51bGwsIGxvY2tUaW1lPW51bGwsIHVwZGF0ZUJ5PW51bGwsIHN0YWZmQ29kZUxpc3Q9bnVsbCwgc3RhZmZQcm9maWxlTGlzdD1udWxsLCBleHRJbmZvPW51bGwsIGxvY2tTdGF0ZT1udWxsKSIsInNjb3BlIjpbIlVzZXJfQ3VzdG9tZXJfS1lDX0luZm8iXSwiYXRpIjoiamUtRzhfMWdkZHlFWkNfeVdaUzhuUEt1cno0IiwiZXhwIjoxNjk5NTY3NTM2LCJ0b2tlblR5cGUiOm51bGwsInVzZXJJZCI6IjcwMDUxOSIsImp0aSI6InQ5YVNwYTdIXzFRWmJxV0pxcmt4SHNSZHNqZyIsImNsaWVudF9pZCI6IjIwMjMwODMxMjE1NzAwMDEifQ.tpAGdlYP6mchETOe5hWGocUt_xw0BqeVwhds_vxiudE",
+            refreshTokenExpiryTime: "1697061936918",
+            customerId: "700519"
+          },
+          userInfo: {
+            userId: "700519",
+            phoneNumber: "3058863237",
+            email: "juan.saavedra9306@gmail.com",
+            documentType: "CC",
+            documentNo: "1015436437",
+            name: "Juan",
+            surname: "Saavedra",
+            deliveryAddress: [
+              {
+                name: "Casa",
+                phoneNumber: "3058863237",
+                fixPhoneNumber: "",
+                province: "Bogotá D.C.",
+                city: "Bogotá D.C.",
+                address: "Cra 112F #72c-38",
+                detail: "Piso 2",
+                isDefault: true
+              }
+            ],
+            extendInfo: {
+              accessToken:
+                "ory_at_kx6BvCLDKhQROYGsdKlQTpBZVu2vFP74kAXpj8SvTDw.-yzGYj_JPTtCvDHUO7mwIv7YN0_nUcJJiKe9XWi-iDQ",
+              idToken:
+                "eyJhbGciOiJSUzI1NiIsImtpZCI6InByaXZhdGU6MzcxMGZlODYtNTgxZS00ODY4LWFhMTAtODdiNmI5YTdiNGZjIiwidHlwIjoiSldUIn0.eyJhdF9oYXNoIjoiM09NVTNnd19mUUpIVkE4LTE3T2N5QSIsImF1ZCI6WyIwNWQzYTFlNC04ZDJlLTRkNjMtODRmNC0zZjA5YTA2NzVkNzQiXSwiYXVkaXRfaWQiOm51bGwsImF1dGhfdGltZSI6MTY5Njk3NTM4NSwiY2F0ZWdvcnkiOnsiY2xhcm9fc2VydmljZSI6eyJNSU4iOlt7Ik1JTiI6IjMwNTg4NjMyMzciLCJ0eXBlIjoiUG9zdHBhZ28ifSx7Ik1JTiI6IjMyMDMwMTM4NjEiLCJ0eXBlIjoiUHJlcGFnbyJ9XSwiYWNjb3VudHMiOlt7ImN1ZW50YSI6IjQ4NTc0MTc1IiwiZGlyZWNjaW9uIjoiQ1IgMTEyRiA3MkMtMzggUElTTzIifV0sImVtYWlscyI6W3sibWFpbCI6IkpVQU5AVEVMTUVYLkNPTS5ORVQifSx7Im1haWwiOiJKVUFOQFRFTE1FWC5DT00uTkVUIn1dfX0sImNvbXBhbnlfdWlkIjoiMSIsImRldmljZV9pbmZvIjp7ImJyb3dzZXIiOiJVbmtub3duIEJyb3dzZXIiLCJicm93c2VyX3ZlcnNpb24iOiIwIiwib3MiOiJVbmtub3duIn0sImRuaSI6IkNDMTAxNTQzNjQzNyIsImVtYWlsIjoianVhbi5zYWF2ZWRyYTkzMDZAZ21haWwuY29tIiwiZXhwIjoxNjk2OTc4OTg1LCJmZWRlcmF0ZWRfaWQiOnRydWUsImlhdCI6MTY5Njk3NTM4NSwiaWRlbnRpZmljYXRpb25fcHJvdmlkZXIiOiJhbXgiLCJpcF9hZGRyZXNzIjoiMTI3LjAuMC42IiwiaXNfcHJlX3JlZ2lzdGVyZWQiOmZhbHNlLCJpc191c2VyX2RhdGFfY29tcGxldGUiOnRydWUsImlzcyI6Imh0dHBzOi8vYXBpLWNyLWNvLXRzdC50cnVzdC5sYXQvaHlkcmEiLCJqdGkiOiJiZWM0NTdlNS04OGEyLTQ2YzItOTA0Zi0zZDNjZTg0MWM0YjciLCJsYXN0X25hbWUiOiJTYWF2ZWRyYSIsImxvY2F0aW9uIjpudWxsLCJsb2dpbl90eXBlIjoiUkVHVUxBUl9MT0dJTiIsIm5hbWUiOiJKdWFuIiwicGhvbmVfbnVtYmVyIjoiNTczMDU4ODYzMjM3IiwicmF0IjoxNjk2OTc1MzQ5LCJzY29yZSI6OTAsInNjb3JlX21lc3NhZ2UiOiJoaWdoIiwic2lkIjoiMTViZWQ0ZmQtMDVlMS00NDFiLWFhZjUtOTJjOGE1NjQ1OTIwIiwic3ViIjoidXJuOnByb3ZpZGVyOmFteDpDQzEwMTU0MzY0MzciLCJ1aWQiOiJ1cm46cHJvdmlkZXI6YW14OkNDMTAxNTQzNjQzNyJ9.BXxD-3XmV-ET5jb-jTYq4WTzriYjBnICMYiVTzwnHLTFsUV2LYs-IAML9hFL6AIpgrNRFx_LhacTOl3xjT94zGezskc4hXumqrKIj6QkBD0SUszI1wykt2CAWg6AY1yHJrDiv08x-cGUMseYM5iCS_VI0IJnXQCKBjii3kRMmqCgF6CR25DArCtuJB0Gb1v0XFMJSHjjF0q9kbeaekGSUJtdvcM44AiooWlU2RpeiY2pKaUh-QGPpaneVsvmGMchWQ0_kKUJnr1YjW1pprUM6oDol1EnI5QVGr0njCNF1MC0xKImNBFZWji-Bl_9gt6y4RhaImMvBahnwcW9rPQO_hpvdvtN_iU82EgcNERWijgKxIXSb5RL38jXa1olVf6Gss3oSyFaWeghzrDKyXebA0n-YTNBZnuh0RI7Rl3uH2LbeENcH66qLM826ffRAYVGXPkUnlBvP6o6x53EeNSRPD1wS4f3pLokblWWQsc1XkUGCGYD9L9RzRy0w3YOjGSBPYUEOZnhR9XU3ZKa_KSEtE1NttA56aGMeptU5zrYObfcppTV4_WFVuhjn5Ut2_cNOisN50-V-kmLg5ZL9iamCu9vpMXsSodlJZfCltEJBhkZ8bYQwGyhxie4-2B51UCm6qv_RYjmp281NrYRJ9RFkBZaKzIVM1hqaxcQGSChHa4"
+            }
+          }
+        }
+      }
+    };
+    return new Promise((resolve, reject) => {
+      resolve(mockResponse);
+    });
+  } else {
+    return new Promise((resolve, reject) => {
+      my.request({
+        url,
+        method: "POST",
+        data: {
+          data: {
+            authCode,
+            appId
+          }
+        },
+        success: (res) => {
+          resolve(res);
+        },
+        fail: (res) => {
+          reject(res);
+        }
+      });
+    });
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-ConsultCustomerDataRegister.html">ConsultCustomerDataRegister</a></li><li><a href="module-ConsultCustomerDataSourceRemote.html">ConsultCustomerDataSourceRemote</a></li><li><a href="module-DeviceDataStorage.html">DeviceDataStorage</a></li><li><a href="module-DeviceSpec.html">DeviceSpec</a></li><li><a href="module-DeviceSpecRepository.html">DeviceSpecRepository</a></li><li><a href="module-GenerarOtpValidacionTransDataSourceRemote.html">GenerarOtpValidacionTransDataSourceRemote</a></li><li><a href="module-GeneratePinDataSourceRemote.html">GeneratePinDataSourceRemote</a></li><li><a href="module-GetAccessTokenRepository.html">GetAccessTokenRepository</a></li><li><a href="module-GetAccountDataSource.html">GetAccountDataSource</a></li><li><a href="module-GetAccountRepository.html">GetAccountRepository</a></li><li><a href="module-GetUserElegibilityODataSourseRemote.html">GetUserElegibilityODataSourseRemote</a></li><li><a href="module-NetflixCancelAccountDataSourceRemote.html">NetflixCancelAccountDataSourceRemote</a></li><li><a href="module-NetflixCancelAccountRepository.html">NetflixCancelAccountRepository</a></li><li><a href="module-NetflixSuscriptionRepository.html">NetflixSuscriptionRepository</a></li><li><a href="module-RequestGenerarOtpValidacionTrans.html">RequestGenerarOtpValidacionTrans</a></li><li><a href="module-RequestGeneratePin.html">RequestGeneratePin</a></li><li><a href="module-RequestGetAccount.html">RequestGetAccount</a></li><li><a href="module-RequestNetflixSuscription.html">RequestNetflixSuscription</a></li><li><a href="module-RequestValidarOtpUsuario.html">RequestValidarOtpUsuario</a></li><li><a href="module-RequestValidateNumber.html">RequestValidateNumber</a></li><li><a href="module-RequestValidatePin.html">RequestValidatePin</a></li><li><a href="module-ResponseGenerarOtpValidacionTransaccional.html">ResponseGenerarOtpValidacionTransaccional</a></li><li><a href="module-ResponseGeneratePin.html">ResponseGeneratePin</a></li><li><a href="module-ResponseGetAccount.html">ResponseGetAccount</a></li><li><a href="module-ResponseGetUserElegibilityOp.html">ResponseGetUserElegibilityOp</a></li><li><a href="module-ResponseNetflixCancelAccount.html">ResponseNetflixCancelAccount</a></li><li><a href="module-ResponseNetflixSuscription.html">ResponseNetflixSuscription</a></li><li><a href="module-ResponseValidarOtpUsuario.html">ResponseValidarOtpUsuario</a></li><li><a href="module-ResponseValidateNumber.html">ResponseValidateNumber</a></li><li><a href="module-ResponseValidatePin.html">ResponseValidatePin</a></li><li><a href="module-UserDataLogin.html">UserDataLogin</a></li><li><a href="module-UserDataRepository.html">UserDataRepository</a></li><li><a href="module-UserDataStorage.html">UserDataStorage</a></li><li><a href="module-ValidarOtpUsuarioDataSourceRemote.html">ValidarOtpUsuarioDataSourceRemote</a></li><li><a href="module-ValidateNumberDataSourceRemote.html">ValidateNumberDataSourceRemote</a></li><li><a href="module-ValidateNumberRepository.html">ValidateNumberRepository</a></li><li><a href="module-ValidatePinDataSourceRemote.html">ValidatePinDataSourceRemote</a></li><li><a href="module-ValidatePinRepository.html">ValidatePinRepository</a></li></ul><h3>Classes</h3><ul><li><a href="ConsultCustomerDataSourceRemote.module.exports.html">module.exports</a></li><li><a href="DeviceSpecLocalDataSource.html">DeviceSpecLocalDataSource</a></li><li><a href="GenerarOtpValidacionTransDataSourceRemote.module.exports.html">module.exports</a></li><li><a href="GeneratePinDataSourceRemote.module.exports.html">module.exports</a></li><li><a href="GetAccessTokenDataSource.html">GetAccessTokenDataSource</a></li><li><a href="getUserElegibilityRepository.html">getUserElegibilityRepository</a></li><li><a href="module.exports.html">exports</a></li><li><a href="module-ConsultCustomerDataRegister.html">ConsultCustomerDataRegister</a></li><li><a href="module-DeviceSpec.html">DeviceSpec</a></li><li><a href="module-GetAccountRepository.html">GetAccountRepository</a></li><li><a href="module-GetUserElegibilityODataSourseRemote.html">GetUserElegibilityODataSourseRemote</a></li><li><a href="module-NetflixCancelAccountRepository.html">NetflixCancelAccountRepository</a></li><li><a href="module-NetflixSuscriptionRepository.html">NetflixSuscriptionRepository</a></li><li><a href="module-RequestGenerarOtpValidacionTrans.html">RequestGenerarOtpValidacionTrans</a></li><li><a href="module-RequestGeneratePin.html">RequestGeneratePin</a></li><li><a href="module-RequestGetAccount.html">RequestGetAccount</a></li><li><a href="module-RequestNetflixSuscription.html">RequestNetflixSuscription</a></li><li><a href="module-RequestValidarOtpUsuario.html">RequestValidarOtpUsuario</a></li><li><a href="module-RequestValidateNumber.html">RequestValidateNumber</a></li><li><a href="module-RequestValidatePin.html">RequestValidatePin</a></li><li><a href="module-ResponseGenerarOtpValidacionTransaccional.html">ResponseGenerarOtpValidacionTransaccional</a></li><li><a href="module-ResponseGeneratePin.html">ResponseGeneratePin</a></li><li><a href="module-ResponseGetAccount.html">ResponseGetAccount</a></li><li><a href="module-ResponseGetUserElegibilityOp.html">ResponseGetUserElegibilityOp</a></li><li><a href="module-ResponseNetflixCancelAccount.html">ResponseNetflixCancelAccount</a></li><li><a href="module-ResponseNetflixSuscription.html">ResponseNetflixSuscription</a></li><li><a href="module-ResponseValidarOtpUsuario.html">ResponseValidarOtpUsuario</a></li><li><a href="module-ResponseValidateNumber.html">ResponseValidateNumber</a></li><li><a href="module-ResponseValidatePin.html">ResponseValidatePin</a></li><li><a href="module-UserDataLogin.html">UserDataLogin</a></li><li><a href="module-UserDataRepository.html">UserDataRepository</a></li><li><a href="module-ValidateNumberRepository.html">ValidateNumberRepository</a></li><li><a href="module-ValidatePinDataSourceRemote.html">ValidatePinDataSourceRemote</a></li><li><a href="module-ValidatePinRepository.html">ValidatePinRepository</a></li></ul><h3>Global</h3><ul><li><a href="global.html#APIGetAccount">APIGetAccount</a></li><li><a href="global.html#ApiGetUserElegibilityOpr">ApiGetUserElegibilityOpr</a></li><li><a href="global.html#ApiNetflixSuscription">ApiNetflixSuscription</a></li><li><a href="global.html#ApiValidateNumber">ApiValidateNumber</a></li><li><a href="global.html#ApiconsultCustomerDataRegister">ApiconsultCustomerDataRegister</a></li><li><a href="global.html#ApigenerarOtpValidacion">ApigenerarOtpValidacion</a></li><li><a href="global.html#ApigeneratePin">ApigeneratePin</a></li><li><a href="global.html#ApivalidarOtpUsuario">ApivalidarOtpUsuario</a></li><li><a href="global.html#ApivalidatePin">ApivalidatePin</a></li><li><a href="global.html#NetflixCancelAccount">NetflixCancelAccount</a></li><li><a href="global.html#consultCustomerDataRegister">consultCustomerDataRegister</a></li><li><a href="global.html#countDown">countDown</a></li><li><a href="global.html#createDeviceDataInStorage">createDeviceDataInStorage</a></li><li><a href="global.html#createUserDataLoginInStorage">createUserDataLoginInStorage</a></li><li><a href="global.html#deviceSpecLocal">deviceSpecLocal</a></li><li><a href="global.html#executeNetflixSubscription">executeNetflixSubscription</a></li><li><a href="global.html#formatSecontToMinutes">formatSecontToMinutes</a></li><li><a href="global.html#generarOtpValidacionTransaccional">generarOtpValidacionTransaccional</a></li><li><a href="global.html#generatePin">generatePin</a></li><li><a href="global.html#getAccessToken">getAccessToken</a></li><li><a href="global.html#getAccount">getAccount</a></li><li><a href="global.html#getDeviceDataInStorage">getDeviceDataInStorage</a></li><li><a href="global.html#getUserDataInStorageLocal">getUserDataInStorageLocal</a></li><li><a href="global.html#getUserElegibilityOp">getUserElegibilityOp</a></li><li><a href="global.html#handleClose">handleClose</a></li><li><a href="global.html#handlePopupClose">handlePopupClose</a></li><li><a href="global.html#handleTab">handleTab</a></li><li><a href="global.html#netflixCancel">netflixCancel</a></li><li><a href="global.html#netflixCancelAccount">netflixCancelAccount</a></li><li><a href="global.html#netflixSuscription">netflixSuscription</a></li><li><a href="global.html#onAcceptButtonTap">onAcceptButtonTap</a></li><li><a href="global.html#onAcceptButtonTapCancel">onAcceptButtonTapCancel</a></li><li><a href="global.html#onAcceptConditionsTermsChange">onAcceptConditionsTermsChange</a></li><li><a href="global.html#onActionCancel">onActionCancel</a></li><li><a href="global.html#onActionContinue">onActionContinue</a></li><li><a href="global.html#onBillingTypePress">onBillingTypePress</a></li><li><a href="global.html#onCancelButtonTap">onCancelButtonTap</a></li><li><a href="global.html#onChange">onChange</a></li><li><a href="global.html#onClose">onClose</a></li><li><a href="global.html#onCodeFocus">onCodeFocus</a></li><li><a href="global.html#onDetail">onDetail</a></li><li><a href="global.html#onHandleClose">onHandleClose</a></li><li><a href="global.html#onHandleCloseError">onHandleCloseError</a></li><li><a href="global.html#onHandleCloseNotification">onHandleCloseNotification</a></li><li><a href="global.html#onLoad">onLoad</a></li><li><a href="global.html#onRedirectTermsAndConditions">onRedirectTermsAndConditions</a></li><li><a href="global.html#onRedirectToValidatePin">onRedirectToValidatePin</a></li><li><a href="global.html#onResendCode">onResendCode</a></li><li><a href="global.html#onSelectOption">onSelectOption</a></li><li><a href="global.html#onSendGeneratePin">onSendGeneratePin</a></li><li><a href="global.html#onValidatePin">onValidatePin</a></li><li><a href="global.html#sendGeneratePinForType">sendGeneratePinForType</a></li><li><a href="global.html#showLoading">showLoading</a></li><li><a href="global.html#startTimer">startTimer</a></li><li><a href="global.html#updateDeviceDataInfoStorage">updateDeviceDataInfoStorage</a></li><li><a href="global.html#validateNumber">validateNumber</a></li><li><a href="global.html#validatePin">validatePin</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Thu Oct 19 2023 17:22:56 GMT-0500 (Colombia Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

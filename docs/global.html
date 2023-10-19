@@ -1,0 +1,9135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Global</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Global</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2></h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="deviceSpecLocal"><span class="type-signature">(constant) </span>deviceSpecLocal<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    <p>Recupera los datos del dispositivo del almacenamiento.</p>
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_deviceData_dataSource_DeviceSpecLocalDataSource.js.html">data/attributes/deviceData/dataSource/DeviceSpecLocalDataSource.js</a>, <a href="data_attributes_deviceData_dataSource_DeviceSpecLocalDataSource.js.html#line21">line 21</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="APIGetAccount"><span class="type-signature">(async) </span>APIGetAccount<span class="signature">(documentNumber, documentType)</span><span class="type-signature"> &rarr; {ResponseGetAccount}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Recupera la información de la cuenta basada en el número de documento proporcionado y el tipo de documento.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>documentNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El número de documento asociado con la cuenta.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>documentType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El tipo de documento utilizado para la identificación.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_GetAccountViewModel.js.html">domain/GetAccountViewModel.js</a>, <a href="domain_GetAccountViewModel.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Los datos de la cuenta o un mensaje de error.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">ResponseGetAccount</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ApiGetUserElegibilityOpr"><span class="type-signature">(async) </span>ApiGetUserElegibilityOpr<span class="signature">(userInfo)</span><span class="type-signature"> &rarr; {Promise.&lt;(ResponseGetUserElegibilityOp|Error)>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Recupera información de elegibilidad del usuario basada en una especificación de dispositivo.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La información del usuario</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_GetUserElegibilityOpViewModel.js.html">domain/GetUserElegibilityOpViewModel.js</a>, <a href="domain_GetUserElegibilityOpViewModel.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Una promesa que se resuelve a un objeto ResponsegetUserElaLegityOP que contiene los datos de error y respuesta del servicio remoto, o rechaza con un objeto de error.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;(ResponseGetUserElegibilityOp|Error)></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ApiNetflixSuscription"><span class="type-signature">(async) </span>ApiNetflixSuscription<span class="signature">(userInfo, bundle<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {ResponseNetflixSuscription|Error}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Se suscribe a Netflix utilizando la información del usuario proporcionada y el parámetro opcional del paquete.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Un objeto que contiene información del usuario como nombre y correo electrónico.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>bundle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Una bandera que indica si suscribirse a un paquete de paquete o no.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_NetflixSuscriptionViewModel.js.html">domain/NetflixSuscriptionViewModel.js</a>, <a href="domain_NetflixSuscriptionViewModel.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Un objeto que contiene los datos de error y respuesta de la solicitud remota, o un objeto de error si se produce un error.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">ResponseNetflixSuscription</span>
+|
+
+<span class="param-type">Error</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ApiValidateNumber"><span class="type-signature">(async) </span>ApiValidateNumber<span class="signature">(dataUser, userInfo)</span><span class="type-signature"> &rarr; {ResponseValidateNumber|Error}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Valida un número utilizando la clase ValidateNumberRepository.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dataUser</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene datos de usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene información del usuario.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_ValidateNumberViewModel.js.html">domain/ValidateNumberViewModel.js</a>, <a href="domain_ValidateNumberViewModel.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Una instancia de la clase ResponseValidateNumber si tiene éxito, de lo contrario un objeto de error.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">ResponseValidateNumber</span>
+|
+
+<span class="param-type">Error</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ApiconsultCustomerDataRegister"><span class="type-signature">(async) </span>ApiconsultCustomerDataRegister<span class="signature">(dataLogin, userInfo)</span><span class="type-signature"> &rarr; {Promise.&lt;(ResponseConsultCustomerDataRegister|Error)>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Llama a ConsultCustomerDataRegisterRepository para recuperar datos de consulta remota del servicio de usuario.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>dataLogin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El objeto con información de inicio de sesión.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El objeto con información del usuario.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_ConsultCustomerDataRegisterViewModel.js.html">domain/ConsultCustomerDataRegisterViewModel.js</a>, <a href="domain_ConsultCustomerDataRegisterViewModel.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Una promesa que se resuelve a una instancia de ResponseConsultCustomerDataRegister o rechaza con un error.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;(ResponseConsultCustomerDataRegister|Error)></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ApigenerarOtpValidacion"><span class="type-signature">(async) </span>ApigenerarOtpValidacion<span class="signature">(userInfo, destino, tipoOTP, correoEnc)</span><span class="type-signature"> &rarr; {object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Genera una contraseña única (OTP) para fines de validación.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Información del usuario requerida para el proceso de generación OTP.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>destino</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El destino del OTP (por ejemplo, dirección de correo electrónico).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tipoOTP</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El tipo de OTP a generar.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>correoEnc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La dirección de correo electrónico cifrada.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_GenerarOtpValidacionTransViewModel.js.html">domain/GenerarOtpValidacionTransViewModel.js</a>, <a href="domain_GenerarOtpValidacionTransViewModel.js.html#line14">line 14</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Un objeto que contiene el código de error, el mensaje de respuesta y el OTP generado.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ApigeneratePin"><span class="type-signature">(async) </span>ApigeneratePin<span class="signature">(userInfo, dataUser, linea, lineaEnc, usuario<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {ResponseGeneratePin|Error}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Genera un PIN para un usuario.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Un objeto que contiene información del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dataUser</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Un objeto que contiene datos de usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>linea</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>El número de teléfono del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lineaEnc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>El número de teléfono cifrado.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>usuario</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "claro"
+                
+                </td>
+            
+
+            <td class="description last"><p>El tipo de usuario (opcional, valor predeterminado es &quot;claro&quot;).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_GeneratePinViewModel.js.html">domain/GeneratePinViewModel.js</a>, <a href="domain_GeneratePinViewModel.js.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Un objeto ResponseGeneratePin que contiene los datos de error y respuesta del proceso de generación remota de PIN, o un error si se produce una excepción.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">ResponseGeneratePin</span>
+|
+
+<span class="param-type">Error</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ApivalidarOtpUsuario"><span class="type-signature">(async) </span>ApivalidarOtpUsuario<span class="signature">(userInfo, usuario, pin, usuarioEnc)</span><span class="type-signature"> &rarr; {ResponseValidarOtpUsuario|Error}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Valida el OTP para un usuario.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Información sobre el usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>usuario</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El nombre de usuario del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El pin del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>usuarioEnc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El nombre de usuario cifrado del usuario.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_ValidarOtpUsuarioViewModel.js.html">domain/ValidarOtpUsuarioViewModel.js</a>, <a href="domain_ValidarOtpUsuarioViewModel.js.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>El objeto de respuesta o un objeto de error.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">ResponseValidarOtpUsuario</span>
+|
+
+<span class="param-type">Error</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="ApivalidatePin"><span class="type-signature">(async) </span>ApivalidatePin<span class="signature">(userInfo, maskedLineNumber, pin, deviceData, usuario<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Valida un PIN usando una llamada API remota.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Un objeto que contiene información del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>maskedLineNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Una cadena que representa un número de teléfono enmascarado.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>A string representing a PIN.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>deviceData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>Un objeto que contiene información del dispositivo.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>usuario</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "claro"
+                
+                </td>
+            
+
+            <td class="description last"><p>Una cadena que representa al usuario (el valor predeterminado es &quot;Claro&quot;).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_ValidatePinViewModel.js.html">domain/ValidatePinViewModel.js</a>, <a href="domain_ValidatePinViewModel.js.html#line15">line 15</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Un objeto ResponseValidatePin que representa el resultado de validación, con error de propiedades, codigo y descripción.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="NetflixCancelAccount"><span class="type-signature">(async) </span>NetflixCancelAccount<span class="signature">(deviceSpect)</span><span class="type-signature"> &rarr; {ResponseNetflixCancelAccount|Error}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Cancela una cuenta de Netflix utilizando una llamada API remota.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>deviceSpect</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene información sobre el dispositivo.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_NetflixCancelAccountViewModel.js.html">domain/NetflixCancelAccountViewModel.js</a>, <a href="domain_NetflixCancelAccountViewModel.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Un objeto ResponseNetflixCancelAccount que contiene los datos de error y respuesta de la llamada API, o un objeto de error si se produce una excepción.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">ResponseNetflixCancelAccount</span>
+|
+
+<span class="param-type">Error</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="consultCustomerDataRegister"><span class="type-signature"></span>consultCustomerDataRegister<span class="signature">(url, dataLogin, userInfo)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Realiza una solicitud de publicación a una URL especificada con los datos y encabezados proporcionados.
+Devuelve una promesa que se resuelve con la respuesta si la solicitud es exitosa
+y rechaza con la respuesta de error si la solicitud falla.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL a la que se realizará la solicitud POST.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dataLogin</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene los datos de inicio de sesión.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene información del usuario, con propiedades como <code>X-ACCESS-TOKEN</code>, <code>X-MC-LINE</code>, <code>X-MC-LOB</code>, <code>X-MC-MAIL</code>, y <code>X-MC-SO</code>.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_consultCustomerDataRegister_source_ConsultCustomerDataRegisterRemote.js.html">data/attributes/consultCustomerDataRegister/source/ConsultCustomerDataRegisterRemote.js</a>, <a href="data_attributes_consultCustomerDataRegister_source_ConsultCustomerDataRegisterRemote.js.html#line13">line 13</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Una promesa que se resuelve con la respuesta si la solicitud es exitosa y rechaza con la respuesta de error si la solicitud falla.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="countDown"><span class="type-signature"></span>countDown<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Simula una cuenta regresiva de mayor a menor.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line76">line 76</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="createDeviceDataInStorage"><span class="type-signature"></span>createDeviceDataInStorage<span class="signature">(userInfo, platform)</span><span class="type-signature"> &rarr; {object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Crea un nuevo objeto DeviceSpect a partir de una representación de cadena de un dispositivo
+y almacena la información del dispositivo localmente utilizando un DeviceSpectRepository.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Una representación de cadena de un dispositivo.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>platform</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Plataforma.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_DeviceDataViewModel.js.html">domain/DeviceDataViewModel.js</a>, <a href="domain_DeviceDataViewModel.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>La respuesta del repositorio.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="createUserDataLoginInStorage"><span class="type-signature"></span>createUserDataLoginInStorage<span class="signature">(loginString)</span><span class="type-signature"> &rarr; {any}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Analiza la cadena de inicio de sesión en un objeto JSON, crea una nueva instancia de la clase DataLogin utilizando los datos analizados,
+crea una nueva instancia de la clase DataLoginRepository, y llama al método CreateDataUserLoginInStorageLocal
+del objeto dataLoginRepository con el objeto dataLogin como argumento.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>loginString</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Una cadena que representa la información de inicio de sesión en formato JSON.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_UserDataViewModel.js.html">domain/UserDataViewModel.js</a>, <a href="domain_UserDataViewModel.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>La respuesta del método CreateDataUserLoginInStorageLocal.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="executeNetflixSubscription"><span class="type-signature"></span>executeNetflixSubscription<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Ejecuta la subscripción a Netflix llamando al servicio encargado.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line186">line 186</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="formatSecontToMinutes"><span class="type-signature"></span>formatSecontToMinutes<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Formatea el contador de segundos a minutos.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line97">line 97</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Los segundos formateados a 00:00</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="generarOtpValidacionTransaccional"><span class="type-signature"></span>generarOtpValidacionTransaccional<span class="signature">(url, userInfo, request)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Genera una contraseña única (OTP) para la validación de transacciones.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL para enviar la solicitud de publicación HTTP.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene información del usuario, incluidos los tokens de acceso y otros encabezados requeridos para la autenticación.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene los datos de solicitud, incluida la dirección de correo electrónico de destino y el tipo de OTP.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_generarValidacionOtpTrans_source_GenerarOtpValidacionTransRemote.js.html">data/attributes/generarValidacionOtpTrans/source/GenerarOtpValidacionTransRemote.js</a>, <a href="data_attributes_generarValidacionOtpTrans_source_GenerarOtpValidacionTransRemote.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Una promesa que se resuelve con la respuesta del servidor si la solicitud es exitosa o rechaza con un mensaje de error si la solicitud falla.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="generatePin"><span class="type-signature"></span>generatePin<span class="signature">(url, userInfo, dataUser, request)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Realiza una solicitud POST a la URL especificada.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL para hacer que la publicación solicite.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene varios encabezados de información del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dataUser</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene datos relacionados con el usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene parámetros de solicitud.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_generatePin_source_GeneratePinRemote.js.html">data/attributes/generatePin/source/GeneratePinRemote.js</a>, <a href="data_attributes_generatePin_source_GeneratePinRemote.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Una promesa que se resuelve con la respuesta de la solicitud si es exitosa o rechaza con la respuesta de error si falla.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getAccessToken"><span class="type-signature"></span>getAccessToken<span class="signature">(url, authCode, appId)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Recupera un token de acceso de un servidor.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL del punto final del servidor para solicitar el token de acceso.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>authCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El código de autorización requerido para autenticar la solicitud.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>appId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La identificación de la aplicación que realiza la solicitud.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_authUser_source_GetAccessToken.js.html">data/attributes/authUser/source/GetAccessToken.js</a>, <a href="data_attributes_authUser_source_GetAccessToken.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Una promesa que se resuelve con el token de acceso y otra información relevante.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getAccessToken"><span class="type-signature">(async) </span>getAccessToken<span class="signature">(authCode, appId)</span><span class="type-signature"> &rarr; {object|boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Recupera un token de acceso y información del usuario de un repositorio.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>authCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El código de autorización utilizado para obtener el token de acceso.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>appId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La identificación de la aplicación.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_getAccessTokenViewModel.js.html">domain/getAccessTokenViewModel.js</a>, <a href="domain_getAccessTokenViewModel.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>La información del usuario recuperada del repositorio. Si se produce un error o la respuesta indica un error, se devuelve `falso '.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+|
+
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getAccount"><span class="type-signature"></span>getAccount<span class="signature">(url, data)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Realiza una solicitud POST a una URL específica con datos proporcionados.
+Devuelve una promesa que se resuelve con la respuesta si la solicitud es exitosa y rechaza con la respuesta si la solicitud falla.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL a la que se realiza la solicitud posterior.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Los datos que se enviarán con la solicitud posterior.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_getAccount_source_getAccount.js.html">data/attributes/getAccount/source/getAccount.js</a>, <a href="data_attributes_getAccount_source_getAccount.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Throws:</h5>
+
+        
+
+<dl>
+    <dt>
+        <div class="param-desc">
+        <ul>
+<li>Si la solicitud falla.</li>
+</ul>
+        </div>
+    </dt>
+    <dd></dd>
+    <dt>
+        <dl>
+            <dt>
+                Type
+            </dt>
+            <dd>
+                
+<span class="param-type">Error</span>
+
+
+            </dd>
+        </dl>
+    </dt>
+    <dd></dd>
+</dl>
+
+
+    
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Una promesa que se resuelve con la respuesta si la solicitud es exitosa y rechaza con la respuesta si la solicitud falla.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getDeviceDataInStorage"><span class="type-signature"></span>getDeviceDataInStorage<span class="signature">()</span><span class="type-signature"> &rarr; {object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Recupera la información de almacenamiento del dispositivo utilizando la clase DeviceSpectRepositor</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_DeviceDataViewModel.js.html">domain/DeviceDataViewModel.js</a>, <a href="domain_DeviceDataViewModel.js.html#line29">line 29</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>La respuesta del método GetDeviceSpectSourceLocal, que contiene información sobre el almacenamiento del dispositivo.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getUserDataInStorageLocal"><span class="type-signature"></span>getUserDataInStorageLocal<span class="signature">()</span><span class="type-signature"> &rarr; {any}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Recupera la información de inicio de sesión del almacenamiento local.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_UserDataViewModel.js.html">domain/UserDataViewModel.js</a>, <a href="domain_UserDataViewModel.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>La información de inicio de sesión recuperada del almacenamiento local.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getUserElegibilityOp"><span class="type-signature"></span>getUserElegibilityOp<span class="signature">(url, userInfo)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Realiza una solicitud POST a la URL especificada con información del usuario en los encabezados.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL a la que se realiza la solicitud posterior.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene información del usuario, incluido el token de acceso, ID de cuenta, línea de negocios, correo electrónico y plataforma.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_getUserElegibilityOp_sourse_GetUserElegibilityOp.js.html">data/attributes/getUserElegibilityOp/sourse/GetUserElegibilityOp.js</a>, <a href="data_attributes_getUserElegibilityOp_sourse_GetUserElegibilityOp.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Una promesa que se resuelve con la respuesta si la solicitud es exitosa o rechaza con los datos de respuesta si la solicitud falla.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="handleClose"><span class="type-signature"></span>handleClose<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Oculta el popup y redirecciona al MP de Novedades.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line281">line 281</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="handlePopupClose"><span class="type-signature"></span>handlePopupClose<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Oculta el popup de tipo de recaudo.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line172">line 172</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="handleTab"><span class="type-signature"></span>handleTab<span class="signature">(e)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Activa las diferentes tabs del menú</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Event</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_ManageAccount_ManageAccount.js.html">ui/pages/ManageAccount/ManageAccount.js</a>, <a href="ui_pages_ManageAccount_ManageAccount.js.html#line83">line 83</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="netflixCancel"><span class="type-signature"></span>netflixCancel<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Llama al servicio que ejecuta la cancelación de la subscripción a Netflix.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line108">line 108</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="netflixCancelAccount"><span class="type-signature"></span>netflixCancelAccount<span class="signature">(url, userInfo)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Realiza una solicitud POST a la URL especificada con información del usuario en los encabezados.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL a la que se realiza la solicitud posterior.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene información del usuario.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_netflixCancelAccount_source_NetflixCancelAccountSource.js.html">data/attributes/netflixCancelAccount/source/NetflixCancelAccountSource.js</a>, <a href="data_attributes_netflixCancelAccount_source_NetflixCancelAccountSource.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Una promesa que se resuelve con la respuesta si la solicitud es exitosa o rechaza con los datos de respuesta si la solicitud falla.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="netflixSuscription"><span class="type-signature"></span>netflixSuscription<span class="signature">(url, userInfo, request)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Realiza una solicitud POST a una URL especificada con información del usuario y detalles de solicitud.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL para hacer que la publicación solicite.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene información del usuario.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accessToken</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El token de acceso del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La ID de cuenta del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lineOfBusiness</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La línea de negocios del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>email</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El correo electrónico del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>platform</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La plataforma del usuario.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene los detalles de la solicitud.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>bundle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Define si es o no paquete.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_netflixSuscription_source_NetflixSuscriptionRemote.js.html">data/attributes/netflixSuscription/source/NetflixSuscriptionRemote.js</a>, <a href="data_attributes_netflixSuscription_source_NetflixSuscriptionRemote.js.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Una promesa que se resuelve con la respuesta si la solicitud es exitosa y rechaza con la respuesta si la solicitud falla.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onAcceptButtonTap"><span class="type-signature"></span>onAcceptButtonTap<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Redirecciona a la siguiente pantalla donde muestra loas diferentes métodos de verificación de ID.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line150">line 150</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onAcceptButtonTapCancel"><span class="type-signature"></span>onAcceptButtonTapCancel<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Acciona la cancelación de Netflix y espera la respuesta del servicio.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line143">line 143</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onAcceptConditionsTermsChange"><span class="type-signature"></span>onAcceptConditionsTermsChange<span class="signature">(e)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Cambia de estado el switch de los TyC</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Event</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line55">line 55</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onActionCancel"><span class="type-signature"></span>onActionCancel<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Muestra el popup de cancelación del servicio de Netflix.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line99">line 99</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onActionContinue"><span class="type-signature"></span>onActionContinue<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Define el tipo de recaudo y muestra el popup de confirmación correspondiente.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onBillingTypePress"><span class="type-signature"></span>onBillingTypePress<span class="signature">(e)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Oculta el popup de tipo de recaudo y muestra el popup de continuar con la verificación de identidad.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Event</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line89">line 89</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onCancelButtonTap"><span class="type-signature"></span>onCancelButtonTap<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Oculta el popup de cancelación de Netflix.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line162">line 162</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onChange"><span class="type-signature"></span>onChange<span class="signature">(e)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Almacena los dígitos cada vez que se ingresan en la UI. Si se completan, se iniciar la petición para validar el pin y realizar la subscripción.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Event</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line314">line 314</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onClose"><span class="type-signature"></span>onClose<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Oculta el teclado numérico.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line329">line 329</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onCodeFocus"><span class="type-signature"></span>onCodeFocus<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Muestra el teclado numérico cuando se selecciona una de las casillas de ingreso de código.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line304">line 304</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onDetail"><span class="type-signature"></span>onDetail<span class="signature">(e)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Actualiza la linea de negocio y el nro de cuenta, luego redirecciona a la siguiente pantalla para mostrar la información</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Event</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_ManageAccount_ManageAccount.js.html">ui/pages/ManageAccount/ManageAccount.js</a>, <a href="ui_pages_ManageAccount_ManageAccount.js.html#line93">line 93</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onHandleClose"><span class="type-signature"></span>onHandleClose<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Oculta todos los popup's</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line132">line 132</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onHandleClose"><span class="type-signature"></span>onHandleClose<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Oculta el popup de notificación.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html">ui/pages/sendNetflixActivationCode/sendNetflixActivationCode.js</a>, <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html#line232">line 232</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onHandleCloseError"><span class="type-signature"></span>onHandleCloseError<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Oculta el popup de errores genéricos y se devuelve a la pantalla anterior.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html">ui/pages/sendNetflixActivationCode/sendNetflixActivationCode.js</a>, <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html#line241">line 241</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onHandleCloseNotification"><span class="type-signature"></span>onHandleCloseNotification<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Oculta el popup de notificación.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line295">line 295</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onLoad"><span class="type-signature"></span>onLoad<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Obtiene el acceso del mini programa mediante el código de autorización y el Id. Posteriormente consulta las cuentas asociadas al usuario.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_ManageAccount_ManageAccount.js.html">ui/pages/ManageAccount/ManageAccount.js</a>, <a href="ui_pages_ManageAccount_ManageAccount.js.html#line22">line 22</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onLoad"><span class="type-signature"></span>onLoad<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Consulta los medios para la verificación de identidad del usuario. Tales como líneas de celular y correo electrónico.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html">ui/pages/sendNetflixActivationCode/sendNetflixActivationCode.js</a>, <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onLoad"><span class="type-signature"></span>onLoad<span class="signature">(query)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Almacena la información que llega en el query e inicia el contador de reenviar pin.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>query</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">JSON</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto seralizado en JSON que contiene datos importantes de la pantalla anterior.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line39">line 39</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onRedirectTermsAndConditions"><span class="type-signature"></span>onRedirectTermsAndConditions<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Redirecciona a una web externa que contiene información sobre los términos y condiciones del servicio Netflix con Claro.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line45">line 45</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onRedirectToValidatePin"><span class="type-signature"></span>onRedirectToValidatePin<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Redirecciona a la pantalla de validar el pin enviado por cualquier medio electrónico.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html">ui/pages/sendNetflixActivationCode/sendNetflixActivationCode.js</a>, <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html#line206">line 206</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onResendCode"><span class="type-signature"></span>onResendCode<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Reenvía el pin de seguridad dependiendo del medio seleccionado en la pantalla anterior.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line109">line 109</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onSelectOption"><span class="type-signature"></span>onSelectOption<span class="signature">(e)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Método que se acciona cada que el usuario selecciona una de las opciones de verificación de ID.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Event</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html">ui/pages/sendNetflixActivationCode/sendNetflixActivationCode.js</a>, <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html#line91">line 91</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onSendGeneratePin"><span class="type-signature"></span>onSendGeneratePin<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Llama al método de enviar pin según el tipo de medio de verificación seleccionado anteriormente.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html">ui/pages/sendNetflixActivationCode/sendNetflixActivationCode.js</a>, <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html#line124">line 124</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="onValidatePin"><span class="type-signature"></span>onValidatePin<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Valida el pin enviado al correo o al nro de línea seleccionado en la pantalla anterior.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line125">line 125</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="sendGeneratePinForType"><span class="type-signature"></span>sendGeneratePinForType<span class="signature">(channelType)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Envia el pin a un número de línea o al correo electrónico según elina el usuario.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>channelType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html">ui/pages/sendNetflixActivationCode/sendNetflixActivationCode.js</a>, <a href="ui_pages_sendNetflixActivationCode_sendNetflixActivationCode.js.html#line136">line 136</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="sendGeneratePinForType"><span class="type-signature"></span>sendGeneratePinForType<span class="signature">(channelType)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Genera un pin dependiendo del tipo de canal utilizado.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>channelType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line226">line 226</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="showLoading"><span class="type-signature"></span>showLoading<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Muestra una ventana de carga.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_netflixActivation_netflixActivation.js.html">ui/pages/netflixActivation/netflixActivation.js</a>, <a href="ui_pages_netflixActivation_netflixActivation.js.html#line181">line 181</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="startTimer"><span class="type-signature"></span>startTimer<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Inicializa el contador que activa el botón &quot;Reenviar código&quot;.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html">ui/pages/validateNetflixActivationCode/validateNetflixActivationCode.js</a>, <a href="ui_pages_validateNetflixActivationCode_validateNetflixActivationCode.js.html#line63">line 63</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="updateDeviceDataInfoStorage"><span class="type-signature"></span>updateDeviceDataInfoStorage<span class="signature">(userInfo)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Actualiza la información de datos del dispositivo en el almacenamiento.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La información del usuario.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="domain_DeviceDataViewModel.js.html">domain/DeviceDataViewModel.js</a>, <a href="domain_DeviceDataViewModel.js.html#line41">line 41</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>El resultado del método createDeviceDataInStorageLocal.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="validateNumber"><span class="type-signature"></span>validateNumber<span class="signature">(url, dataUser, userInfo, request)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Envía una solicitud de publicación HTTP para validar un número.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL para enviar la solicitud a.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dataUser</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene los datos del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene información adicional sobre el usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">RequestValidateNumber</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Un objeto que contiene datos de solicitud adicionales.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_validateNumber_sourse_ValidateNumberRemote.js.html">data/attributes/validateNumber/sourse/ValidateNumberRemote.js</a>, <a href="data_attributes_validateNumber_sourse_ValidateNumberRemote.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Una promesa que se resuelve con la respuesta de la solicitud HTTP si tiene éxito, o rechaza con un error si la solicitud falla.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="validatePin"><span class="type-signature"></span>validatePin<span class="signature">(url, userInfo, deviceData, request)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Envía una solicitud POST HTTP para validar un PIN.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La URL a la que se realizará la solicitud.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>La información del usuario.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>deviceData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Las especificaciones del dispositivo.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>request</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">RequestValidatePin</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>El objeto de solicitud.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="data_attributes_validatePin_source_ValidatePinRemote.js.html">data/attributes/validatePin/source/ValidatePinRemote.js</a>, <a href="data_attributes_validatePin_source_ValidatePinRemote.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <ul>
+<li>Una promesa que se resuelve con la respuesta si la solicitud es exitosa o rechaza con la respuesta de error si la solicitud falla.</li>
+</ul>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-ConsultCustomerDataRegister.html">ConsultCustomerDataRegister</a></li><li><a href="module-ConsultCustomerDataSourceRemote.html">ConsultCustomerDataSourceRemote</a></li><li><a href="module-DeviceDataStorage.html">DeviceDataStorage</a></li><li><a href="module-DeviceSpec.html">DeviceSpec</a></li><li><a href="module-DeviceSpecRepository.html">DeviceSpecRepository</a></li><li><a href="module-GenerarOtpValidacionTransDataSourceRemote.html">GenerarOtpValidacionTransDataSourceRemote</a></li><li><a href="module-GeneratePinDataSourceRemote.html">GeneratePinDataSourceRemote</a></li><li><a href="module-GetAccessTokenRepository.html">GetAccessTokenRepository</a></li><li><a href="module-GetAccountDataSource.html">GetAccountDataSource</a></li><li><a href="module-GetAccountRepository.html">GetAccountRepository</a></li><li><a href="module-GetUserElegibilityODataSourseRemote.html">GetUserElegibilityODataSourseRemote</a></li><li><a href="module-NetflixCancelAccountDataSourceRemote.html">NetflixCancelAccountDataSourceRemote</a></li><li><a href="module-NetflixCancelAccountRepository.html">NetflixCancelAccountRepository</a></li><li><a href="module-NetflixSuscriptionRepository.html">NetflixSuscriptionRepository</a></li><li><a href="module-RequestGenerarOtpValidacionTrans.html">RequestGenerarOtpValidacionTrans</a></li><li><a href="module-RequestGeneratePin.html">RequestGeneratePin</a></li><li><a href="module-RequestGetAccount.html">RequestGetAccount</a></li><li><a href="module-RequestNetflixSuscription.html">RequestNetflixSuscription</a></li><li><a href="module-RequestValidarOtpUsuario.html">RequestValidarOtpUsuario</a></li><li><a href="module-RequestValidateNumber.html">RequestValidateNumber</a></li><li><a href="module-RequestValidatePin.html">RequestValidatePin</a></li><li><a href="module-ResponseGenerarOtpValidacionTransaccional.html">ResponseGenerarOtpValidacionTransaccional</a></li><li><a href="module-ResponseGeneratePin.html">ResponseGeneratePin</a></li><li><a href="module-ResponseGetAccount.html">ResponseGetAccount</a></li><li><a href="module-ResponseGetUserElegibilityOp.html">ResponseGetUserElegibilityOp</a></li><li><a href="module-ResponseNetflixCancelAccount.html">ResponseNetflixCancelAccount</a></li><li><a href="module-ResponseNetflixSuscription.html">ResponseNetflixSuscription</a></li><li><a href="module-ResponseValidarOtpUsuario.html">ResponseValidarOtpUsuario</a></li><li><a href="module-ResponseValidateNumber.html">ResponseValidateNumber</a></li><li><a href="module-ResponseValidatePin.html">ResponseValidatePin</a></li><li><a href="module-UserDataLogin.html">UserDataLogin</a></li><li><a href="module-UserDataRepository.html">UserDataRepository</a></li><li><a href="module-UserDataStorage.html">UserDataStorage</a></li><li><a href="module-ValidarOtpUsuarioDataSourceRemote.html">ValidarOtpUsuarioDataSourceRemote</a></li><li><a href="module-ValidateNumberDataSourceRemote.html">ValidateNumberDataSourceRemote</a></li><li><a href="module-ValidateNumberRepository.html">ValidateNumberRepository</a></li><li><a href="module-ValidatePinDataSourceRemote.html">ValidatePinDataSourceRemote</a></li><li><a href="module-ValidatePinRepository.html">ValidatePinRepository</a></li></ul><h3>Classes</h3><ul><li><a href="ConsultCustomerDataSourceRemote.module.exports.html">module.exports</a></li><li><a href="DeviceSpecLocalDataSource.html">DeviceSpecLocalDataSource</a></li><li><a href="GenerarOtpValidacionTransDataSourceRemote.module.exports.html">module.exports</a></li><li><a href="GeneratePinDataSourceRemote.module.exports.html">module.exports</a></li><li><a href="GetAccessTokenDataSource.html">GetAccessTokenDataSource</a></li><li><a href="getUserElegibilityRepository.html">getUserElegibilityRepository</a></li><li><a href="module.exports.html">exports</a></li><li><a href="module-ConsultCustomerDataRegister.html">ConsultCustomerDataRegister</a></li><li><a href="module-DeviceSpec.html">DeviceSpec</a></li><li><a href="module-GetAccountRepository.html">GetAccountRepository</a></li><li><a href="module-GetUserElegibilityODataSourseRemote.html">GetUserElegibilityODataSourseRemote</a></li><li><a href="module-NetflixCancelAccountRepository.html">NetflixCancelAccountRepository</a></li><li><a href="module-NetflixSuscriptionRepository.html">NetflixSuscriptionRepository</a></li><li><a href="module-RequestGenerarOtpValidacionTrans.html">RequestGenerarOtpValidacionTrans</a></li><li><a href="module-RequestGeneratePin.html">RequestGeneratePin</a></li><li><a href="module-RequestGetAccount.html">RequestGetAccount</a></li><li><a href="module-RequestNetflixSuscription.html">RequestNetflixSuscription</a></li><li><a href="module-RequestValidarOtpUsuario.html">RequestValidarOtpUsuario</a></li><li><a href="module-RequestValidateNumber.html">RequestValidateNumber</a></li><li><a href="module-RequestValidatePin.html">RequestValidatePin</a></li><li><a href="module-ResponseGenerarOtpValidacionTransaccional.html">ResponseGenerarOtpValidacionTransaccional</a></li><li><a href="module-ResponseGeneratePin.html">ResponseGeneratePin</a></li><li><a href="module-ResponseGetAccount.html">ResponseGetAccount</a></li><li><a href="module-ResponseGetUserElegibilityOp.html">ResponseGetUserElegibilityOp</a></li><li><a href="module-ResponseNetflixCancelAccount.html">ResponseNetflixCancelAccount</a></li><li><a href="module-ResponseNetflixSuscription.html">ResponseNetflixSuscription</a></li><li><a href="module-ResponseValidarOtpUsuario.html">ResponseValidarOtpUsuario</a></li><li><a href="module-ResponseValidateNumber.html">ResponseValidateNumber</a></li><li><a href="module-ResponseValidatePin.html">ResponseValidatePin</a></li><li><a href="module-UserDataLogin.html">UserDataLogin</a></li><li><a href="module-UserDataRepository.html">UserDataRepository</a></li><li><a href="module-ValidateNumberRepository.html">ValidateNumberRepository</a></li><li><a href="module-ValidatePinDataSourceRemote.html">ValidatePinDataSourceRemote</a></li><li><a href="module-ValidatePinRepository.html">ValidatePinRepository</a></li></ul><h3>Global</h3><ul><li><a href="global.html#APIGetAccount">APIGetAccount</a></li><li><a href="global.html#ApiGetUserElegibilityOpr">ApiGetUserElegibilityOpr</a></li><li><a href="global.html#ApiNetflixSuscription">ApiNetflixSuscription</a></li><li><a href="global.html#ApiValidateNumber">ApiValidateNumber</a></li><li><a href="global.html#ApiconsultCustomerDataRegister">ApiconsultCustomerDataRegister</a></li><li><a href="global.html#ApigenerarOtpValidacion">ApigenerarOtpValidacion</a></li><li><a href="global.html#ApigeneratePin">ApigeneratePin</a></li><li><a href="global.html#ApivalidarOtpUsuario">ApivalidarOtpUsuario</a></li><li><a href="global.html#ApivalidatePin">ApivalidatePin</a></li><li><a href="global.html#NetflixCancelAccount">NetflixCancelAccount</a></li><li><a href="global.html#consultCustomerDataRegister">consultCustomerDataRegister</a></li><li><a href="global.html#countDown">countDown</a></li><li><a href="global.html#createDeviceDataInStorage">createDeviceDataInStorage</a></li><li><a href="global.html#createUserDataLoginInStorage">createUserDataLoginInStorage</a></li><li><a href="global.html#deviceSpecLocal">deviceSpecLocal</a></li><li><a href="global.html#executeNetflixSubscription">executeNetflixSubscription</a></li><li><a href="global.html#formatSecontToMinutes">formatSecontToMinutes</a></li><li><a href="global.html#generarOtpValidacionTransaccional">generarOtpValidacionTransaccional</a></li><li><a href="global.html#generatePin">generatePin</a></li><li><a href="global.html#getAccessToken">getAccessToken</a></li><li><a href="global.html#getAccount">getAccount</a></li><li><a href="global.html#getDeviceDataInStorage">getDeviceDataInStorage</a></li><li><a href="global.html#getUserDataInStorageLocal">getUserDataInStorageLocal</a></li><li><a href="global.html#getUserElegibilityOp">getUserElegibilityOp</a></li><li><a href="global.html#handleClose">handleClose</a></li><li><a href="global.html#handlePopupClose">handlePopupClose</a></li><li><a href="global.html#handleTab">handleTab</a></li><li><a href="global.html#netflixCancel">netflixCancel</a></li><li><a href="global.html#netflixCancelAccount">netflixCancelAccount</a></li><li><a href="global.html#netflixSuscription">netflixSuscription</a></li><li><a href="global.html#onAcceptButtonTap">onAcceptButtonTap</a></li><li><a href="global.html#onAcceptButtonTapCancel">onAcceptButtonTapCancel</a></li><li><a href="global.html#onAcceptConditionsTermsChange">onAcceptConditionsTermsChange</a></li><li><a href="global.html#onActionCancel">onActionCancel</a></li><li><a href="global.html#onActionContinue">onActionContinue</a></li><li><a href="global.html#onBillingTypePress">onBillingTypePress</a></li><li><a href="global.html#onCancelButtonTap">onCancelButtonTap</a></li><li><a href="global.html#onChange">onChange</a></li><li><a href="global.html#onClose">onClose</a></li><li><a href="global.html#onCodeFocus">onCodeFocus</a></li><li><a href="global.html#onDetail">onDetail</a></li><li><a href="global.html#onHandleClose">onHandleClose</a></li><li><a href="global.html#onHandleCloseError">onHandleCloseError</a></li><li><a href="global.html#onHandleCloseNotification">onHandleCloseNotification</a></li><li><a href="global.html#onLoad">onLoad</a></li><li><a href="global.html#onRedirectTermsAndConditions">onRedirectTermsAndConditions</a></li><li><a href="global.html#onRedirectToValidatePin">onRedirectToValidatePin</a></li><li><a href="global.html#onResendCode">onResendCode</a></li><li><a href="global.html#onSelectOption">onSelectOption</a></li><li><a href="global.html#onSendGeneratePin">onSendGeneratePin</a></li><li><a href="global.html#onValidatePin">onValidatePin</a></li><li><a href="global.html#sendGeneratePinForType">sendGeneratePinForType</a></li><li><a href="global.html#showLoading">showLoading</a></li><li><a href="global.html#startTimer">startTimer</a></li><li><a href="global.html#updateDeviceDataInfoStorage">updateDeviceDataInfoStorage</a></li><li><a href="global.html#validateNumber">validateNumber</a></li><li><a href="global.html#validatePin">validatePin</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Thu Oct 19 2023 17:22:56 GMT-0500 (Colombia Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
